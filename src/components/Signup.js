@@ -21,7 +21,7 @@ export default function Signup() {
             await signup(emailRef.current.value, passwordConfirmRef.current.value);
         }
         catch {
-            setError('Failed to create account');
+            setError('Failed to create account. hint: Password length is more than 6');
         }
         setLoading(false);
     }
